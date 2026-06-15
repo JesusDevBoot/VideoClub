@@ -41,6 +41,20 @@ public class Cliente {
 		return id;
 	}
 	
+	public TipoCliente getTipoCliente() {
+		return tipoCliente;
+	}
+	
+	public void setTipoCliente(TipoCliente tipoCliente) {
+		
+		if(tipoCliente == null) {
+	        throw new IllegalArgumentException(
+	            "El tipo de cliente es obligatorio");
+	    }
+		
+		this.tipoCliente = tipoCliente;
+	}
+	
 	
 	public String getNombre() {
 		return nombre;
@@ -88,6 +102,7 @@ public class Cliente {
 	            ", nombre='" + nombre + '\'' +
 	            ", email='" + email + '\'' +
 	            ", telefono='" + telefono + '\'' +
+	            ", tipoCliente=" + tipoCliente +
 	            '}';
 	}
 	
