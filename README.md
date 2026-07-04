@@ -6,6 +6,7 @@ Proyecto realizado para practicar Java.
 - Gestion de clientes
 - Gestion de peliculas
 - Alquileres
+- Buscar Clientes pir Id
 
 ## Tecnologias
 - Java
