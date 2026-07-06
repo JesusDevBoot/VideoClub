@@ -5,7 +5,14 @@ public class Old extends Pelicula {
 	private int anioLanzamiento;
 	private boolean remasterizada;
 
-	public Old(int id, String titulo, String genero, boolean disponible, String clasificacion, double precio,int anioLanzamiento, boolean remasterizada) {
+	public Old(int id, 
+			String titulo,
+			String genero,
+			boolean disponible,
+			String clasificacion,
+			int anioLanzamiento,
+			boolean remasterizada) {
+		
 		super(id, titulo, genero, disponible, clasificacion );
 		
 		if (anioLanzamiento < 1900 || anioLanzamiento > 2024) {

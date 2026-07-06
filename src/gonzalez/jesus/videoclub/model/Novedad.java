@@ -10,6 +10,10 @@ public class Novedad extends Pelicula {
 	public Novedad(int id, String titulo, String genero, boolean disponible, String clasificacion,  LocalDate fechaLanzamiento, boolean enCartelera) {
 		super(id, titulo, genero, disponible, clasificacion);
 		// TODO Auto-generated constructor stub
+		if (fechaLanzamiento == null) {
+		    throw new IllegalArgumentException(
+		        "La fecha de lanzamiento es obligatoria");
+		}
 		this.fechaLanzamiento = fechaLanzamiento;
 		this.enCartelera = enCartelera;
 		
@@ -21,6 +25,10 @@ public class Novedad extends Pelicula {
 	}
 
 	public void setFechaLanzamiento(LocalDate fechaLanzamiento) {
+		if (fechaLanzamiento == null) {
+		    throw new IllegalArgumentException(
+		        "La fecha de lanzamiento es obligatoria");
+		}
 		this.fechaLanzamiento = fechaLanzamiento;
 	}
 	
