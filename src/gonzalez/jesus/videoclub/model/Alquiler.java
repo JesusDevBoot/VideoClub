@@ -71,6 +71,17 @@ public class Alquiler {
 	    return precioBase - descuento;
 	}
 	
+	@Override
+	public String toString() {
+	    return "Alquiler{" +
+	            "cliente=" + cliente +
+	            ", pelicula=" + pelicula +
+	            ", fechaAlquiler=" + fechaAlquiler +
+	            ", devuelta=" + devuelta +
+	            ", fechaDevolucion=" + fechaDevolucion +
+	            '}';
+	}
+	
 	
 	
 	

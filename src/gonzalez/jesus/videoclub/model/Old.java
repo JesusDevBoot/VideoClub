@@ -54,6 +54,13 @@ public class Old extends Pelicula {
 		
 	}
 	
+	@Override
+	public String toString() {
+		return "Old [anioLanzamiento=" + anioLanzamiento + ", remasterizada=" + remasterizada + ", getId()="
+				+ getId() + ", getTitulo()=" + getTitulo() + ", getGenero()=" + getGenero() + ", isDisponible()="
+				+ isDisponible() + ", getClasificacion()=" + getClasificacion() + "]";
+	}
+	
 	
 
 }

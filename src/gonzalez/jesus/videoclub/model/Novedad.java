@@ -50,6 +50,13 @@ public class Novedad extends Pelicula {
 			return 4.99;
 			}
 		}
+	
+	@Override
+	public String toString() {
+		return "Novedad [fechaLanzamiento=" + fechaLanzamiento + ", enCartelera=" + enCartelera + ", getId()="
+				+ getId() + ", getTitulo()=" + getTitulo() + ", getGenero()=" + getGenero() + ", isDisponible()="
+				+ isDisponible() + ", getClasificacion()=" + getClasificacion() + "]";
+	}
 }
 		
 	

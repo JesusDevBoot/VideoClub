@@ -1,3 +1,11 @@
+/**
+ * Clase abstracta que representa una película del videoclub.
+ * Contiene los atributos y comportamientos comunes a todos los tipos de películas.
+ *
+ * @author Jesús González
+ * @version 1.0
+ */
+
 package gonzalez.jesus.videoclub.model;
 
 
@@ -22,6 +30,13 @@ public abstract class Pelicula {
 		
 	}
 	
+	
+	/**
+	 * Calcula el precio de alquiler de la película.
+	 *
+	 * @return Precio final del alquiler.
+	 */
+	
 	public abstract double calcularPrecio();
 
 	
@@ -38,6 +53,13 @@ public abstract class Pelicula {
 		
 	// Getter y setter
 	
+	
+	/**
+	 * Obtiene el identificador único de la película.
+	 *
+	 * @return ID de la película.
+	 */
+
 	public int getId() {
 		return id;
 	}

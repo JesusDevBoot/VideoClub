@@ -1,5 +1,7 @@
 package gonzalez.jesus.videoclub.model;
 
+import gonzalez.jesus.videoclub.model.Pelicula;
+
 public class Vhs extends Pelicula {
 	
 	private boolean rebobinada;
@@ -42,6 +44,13 @@ public class Vhs extends Pelicula {
 			return 3.99;
 		}
 		
+	}
+	
+	@Override
+	public String toString() {
+		return "Vhs [rebobinada=" + rebobinada + ", cintaDanada=" + cintaDanada + ", id=" + getId() + ", titulo=" + getTitulo()
+				+ ", genero=" + getGenero() + ", disponible=" + isDisponible() + ", clasificacion=" + getClasificacion()
+				+ "]";
 	}
 	
 }
